@@ -1,46 +1,77 @@
----
-header-includes:
-  - '\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue}'
----
+# DUONG QUANG HUY
+**QA/QC ENGINEER**
 
-# Duong Quang Huy
+Ho Chi Minh City, Vietnam • (+84) 0898 214 791 • duonghuy0304@gmail.com
 
-| **Contact**      | **Links**                                                      |
-|------------------|----------------------------------------------------------------|
-| Location         | District 8, Ho Chi Minh City                                   |
-| Phone            | +84898214791                                                   |
-| Email            | duonghuy@gmail.com                                             |
-| Github           | [quanghuy2k1] ([https://github.com/quanghuy2k1/quanghuy2k1])   |
-| LinkedIn         |                                                                |
+---
 
 ## SUMMARY
-My specialty is in Management Information Systems. I’m interested in Python, PostgreSQL, data processing, and API testing. I’m seeking a suitable position to utilize my skills while aspiring to become an expert in the field.
 
-## EXPERIENCES
+QA/QC Engineer with practical experience testing web, mobile, and API-based applications. Proficient in designing and executing test cases, identifying issues, and ensuring release quality through close collaboration with cross-functional teams. Strong background in Management Information Systems, with solid technical skills in Python, SQL, and API testing. Highly focused on regression and integration testing to deliver reliable and high-performing products.
 
-### Daikin Air Conditioning (Vietnam) Joint Stock Company (Software Tester) - Sep 2023 -> Present
-- Project Management: Proficient in using Notion to organize and manage project workflows
-- API Testing: Experienced in using Postman for API testing and validation
-- Software Testing: Capable of writing and executing detailed test cases. Experienced in system testing to ensure software quality and reliability
-- Bug Tracking: Proficient in logging bugs with clear reproduction steps and expected outcomes, providing actionable feedback for developers
-- Database Management: Proficient in PostgreSQL for querying databases and using Hasura for data management and real-time API development
-- Programming: Skilled in Python for developing custom tools and automating tasks
-- Technologies: Python, PosgreSQL
-
-### Tinh Hoa Solutions (Software Consultant) - Sep 2022 -> Sep 2023
-- Collaborated with Project Manager to gather and refine system requirements
-- Configured systems and software on servers based on client requirements
-- Provided customer support for technical issues related to servers, networks, and reports
-- Designed and developed reports using Report Builder, SSRS, and SQL queries
-- Tested and updated source code to ensure stability and performance before release
-- Technologies: SQL Server, SQL Server Reporting Services
+---
 
 ## TECHNICAL SKILLS
-- **Programming Languages**: Python, C#
-- **Databases**: PostgreSQL, SQL Server
-- **Development Tools**: Git, Notion, Postman, Swagger, VS Code, Jira
-- **Operating Systems**: Window
+
+- **Programming Languages**: C++, C#, Python
+- **Databases**: SQL Server, PostgreSQL
+- **API Tools**: Postman, Swagger, Hasura
+- **Testing**: Manual Testing (Web, Mobile, API)
+- **Skills**: Creation, Test Execution, and Documentation
+- **Design Tools**: UI/UX Mockup & Mindmap Tools (Figma, Xmind)
+- **Analysis**: Requirement Analysis, Design Review, Checklists/Test Cases
+- **Other Skills**: Analytical Thinking, Problem Solving, Communication, Adaptability
+
+---
+
+## WORK EXPERIENCE
+
+### Quality Control | LEAP LLC
+**[01/2025 - Present]**
+
+- Test B2B, B2C, and B2E platforms for flight, eSIM, hotel booking, and collection services.
+- Perform API testing using Postman and Swagger, analyze system logs via terminal to verify real-time data flow, and ensure stable integrations with partners such as Amadeus, Gohub, Bizitrip, and Sunrise Waterbus.
+- Build mock servers to simulate partner APIs and test unavailable or unstable endpoints.
+- Conducted regression, integration, and system testing for B2B/B2C platforms, helping reduce post-release bugs by 40% through improved test coverage and detailed validation workflows.
+- Verify payment gateway integrations (ACB, Payoo, NganLuong), including IPN validation and transaction accuracy.
+- Collaborate with developers and business teams to ensure product quality and provide QA sign-off for production releases.
+
+### Software Tester | Daikin Air Conditioning (Vietnam) JSC
+**[09/2023 – 01/2025]**
+
+- Tested multiple B2B platforms, including Service Sale Portal, Warehouse Portal, and SCRM Portal, along with Customer, Warehouse, and Technician (KTV) mobile apps.
+- Designed and executed 200+ test cases for campaign workflows, warehouse logic, and customer transactions.
+- Conducted API testing using Postman and Swagger, ensuring integration stability with external partners such as Dien May Xanh, Nguyen Kim, and PepsiCo.
+- Verified payment gateway integrations with MoMo and VNPay, validating API responses, IPN flows, and transaction accuracy.
+- Developed small Python tools to support users — such as generating bulk QR codes and automating data exports across multiple databases.
+- Provided user support and created concise user guides to ensure smooth rollout of new system features.
+
+### Software Consultant | Tinh Hoa Solutions
+**[09/2022 - 09/2023]**
+
+- Implemented HRM software systems: gathered and analyzed client requirements, configured system modules, and validated setups before deployment.
+- Designed and executed comprehensive test cases to ensure data integrity and functional accuracy prior to UAT.
+- Supported User Acceptance Testing (UAT) and provided end-user training with clear, detailed documentation.
+- Configured environments and deployed source code on client servers, including domain setup, SSL configuration, and minor system adjustments.
+- Developed and maintained SSRS reports and custom SQL queries to meet business reporting requirements.
+- Collaborated with project managers and developers to ensure system stability and alignment with client expectations.
+
+---
 
 ## EDUCATION
-University of Finance and Marketing (2019-2023) - Bachelor's in Management Information Systems
-- Focus: Management System
+
+**Bachelor of Management Information Systems** | University of Finance and Marketing  
+GPA: 3.18 / 4.0
+
+---
+
+## ACHIEVEMENTS
+
+- **Certification**: SS4U Express Enterprise Resource Planning Training Program
+- **DataCamp Courses**: Python for Data Science, PostgreSQL for Data Analysis
+
+---
+
+## LANGUAGE
+
+- **English**
