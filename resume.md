@@ -1,7 +1,8 @@
 # DUONG QUANG HUY
+
 **QA/QC ENGINEER**
 
-Ho Chi Minh City, Vietnam • (+84) 0898 214 791 • duonghuy0304@gmail.com
+Ho Chi Minh City, Vietnam • (+84) 0898 214 791 • <duonghuy0304@gmail.com> • [github.com/leapvn-huydq/quanghuy2k1](https://github.com/leapvn-huydq/quanghuy2k1)
 
 ---
 
@@ -17,26 +18,36 @@ QA/QC Engineer with practical experience testing web, mobile, and API-based appl
 - **Databases**: SQL Server, PostgreSQL
 - **API Tools**: Postman, Swagger, Hasura
 - **Testing**: Manual Testing (Web, Mobile, API)
+- **AI-assisted Test Design**: Using AI tools to generate test cases and automation scripts
 - **Skills**: Creation, Test Execution, and Documentation
 - **Design Tools**: UI/UX Mockup & Mindmap Tools (Figma, Xmind)
 - **Analysis**: Requirement Analysis, Design Review, Checklists/Test Cases
-- **Other Skills**: Analytical Thinking, Problem Solving, Communication, Adaptability
+- **Bug Tracking & Project Management**: ClickUp
+- **Agile/Scrum**: Sprint Planning, Daily Standup, Retrospective
+- **Other Skills**: Analytical Thinking, Problem Solving, Communication, Adaptability, Business Understanding, Mentoring
 
 ---
 
 ## WORK EXPERIENCE
 
 ### Quality Control | LEAP LLC
+
 **[01/2025 - Present]**
 
 - Test B2B, B2C, and B2E platforms for flight, eSIM, hotel booking, and collection services.
 - Perform API testing using Postman and Swagger, analyze system logs via terminal to verify real-time data flow, and ensure stable integrations with partners such as Amadeus, Gohub, Bizitrip, and Sunrise Waterbus.
 - Build mock servers to simulate partner APIs and test unavailable or unstable endpoints.
 - Conducted regression, integration, and system testing for B2B/B2C platforms, helping reduce post-release bugs by 40% through improved test coverage and detailed validation workflows.
+- Leveraged AI tools to generate test cases and automation scripts, speeding up test design and increasing coverage for regression and integration scenarios.
 - Verify payment gateway integrations (ACB, Payoo, NganLuong), including IPN validation and transaction accuracy.
+- Log, track, and manage bugs/tasks using ClickUp, ensuring clear status updates for cross-functional teams.
+- Participate in Agile/Scrum ceremonies (Sprint Planning, Daily Standup, Retrospective) to align on priorities and testing progress.
+- Develop strong understanding of business flows (booking, payment, partner integration) to review requirements and identify edge cases early.
+- Mentored a fresher QC engineer, guiding test case design, tool usage, and defect reporting practices.
 - Collaborate with developers and business teams to ensure product quality and provide QA sign-off for production releases.
 
 ### Software Tester | Daikin Air Conditioning (Vietnam) JSC
+
 **[09/2023 – 01/2025]**
 
 - Tested multiple B2B platforms, including Service Sale Portal, Warehouse Portal, and SCRM Portal, along with Customer, Warehouse, and Technician (KTV) mobile apps.
@@ -47,6 +58,7 @@ QA/QC Engineer with practical experience testing web, mobile, and API-based appl
 - Provided user support and created concise user guides to ensure smooth rollout of new system features.
 
 ### Software Consultant | Tinh Hoa Solutions
+
 **[09/2022 - 09/2023]**
 
 - Implemented HRM software systems: gathered and analyzed client requirements, configured system modules, and validated setups before deployment.
@@ -60,7 +72,7 @@ QA/QC Engineer with practical experience testing web, mobile, and API-based appl
 
 ## EDUCATION
 
-**Bachelor of Management Information Systems** | University of Finance and Marketing  
+**Bachelor of Management Information Systems** | University of Finance and Marketing
 GPA: 3.18 / 4.0
 
 ---
