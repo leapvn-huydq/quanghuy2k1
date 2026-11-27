@@ -1,0 +1,15 @@
+{
+  "info": { "name": "QA Portfolio - Fictional Booking and Payment API", "description": "Synthetic localhost-only API requests; no credentials or real providers.", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json" },
+  "variable": [ { "key": "baseUrl", "value": "http://127.0.0.1:3100" }, { "key": "bookingId", "value": "REPLACE_WITH_CREATED_BOOKING_ID" } ],
+  "item": [
+    { "name": "Health", "request": { "method": "GET", "url": "{{baseUrl}}/health" } },
+    { "name": "Get offers (success)", "request": { "method": "GET", "url": "{{baseUrl}}/api/offers?scenario=success" } },
+    { "name": "Get offers (partner unavailable)", "request": { "method": "GET", "url": "{{baseUrl}}/api/offers?scenario=unavailable" } },
+    { "name": "Create booking", "event": [ { "listen": "test", "script": { "exec": ["if (pm.response.code === 201) { pm.collectionVariables.set('bookingId', pm.response.json().id); }"] } } ], "request": { "method": "POST", "header": [ { "key": "content-type", "value": "application/json" } ], "body": { "mode": "raw", "raw": "{\"offerId\":\"DEMO-FLIGHT-001\",\"passenger\":{\"firstName\":\"An\",\"lastName\":\"Nguyen\",\"email\":\"an@example.test\"}}" }, "url": "{{baseUrl}}/api/bookings" } },
+    { "name": "Read booking", "request": { "method": "GET", "url": "{{baseUrl}}/api/bookings/{{bookingId}}" } },
+    { "name": "Simulate payment PAID (no real money)", "request": { "method": "POST", "header": [ { "key": "content-type", "value": "application/json" } ], "body": { "mode": "raw", "raw": "{\"bookingId\":\"{{bookingId}}\",\"status\":\"PAID\"}" }, "url": "{{baseUrl}}/api/demo/payments" } },
+    { "name": "Simulate payment FAILED", "request": { "method": "POST", "header": [ { "key": "content-type", "value": "application/json" } ], "body": { "mode": "raw", "raw": "{\"bookingId\":\"{{bookingId}}\",\"status\":\"FAILED\"}" }, "url": "{{baseUrl}}/api/demo/payments" } },
+    { "name": "Cancel pending booking", "request": { "method": "POST", "header": [ { "key": "content-type", "value": "application/json" } ], "body": { "mode": "raw", "raw": "{}" }, "url": "{{baseUrl}}/api/bookings/{{bookingId}}/cancel" } },
+    { "name": "Refund confirmed booking (simulation)", "request": { "method": "POST", "header": [ { "key": "content-type", "value": "application/json" } ], "body": { "mode": "raw", "raw": "{}" }, "url": "{{baseUrl}}/api/bookings/{{bookingId}}/refund" } }
+  ]
+}

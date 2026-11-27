@@ -26,7 +26,7 @@ A local-only travel booking sandbox, built from scratch for **end-to-end quality
 
 ## Visual demo
 
-Start the service with `npm start`, then open **http://127.0.0.1:3100**. It has a deliberately fictional airline offer, a passenger form, and controls to simulate payment confirmation, failure, cancellation and refunds. Each action updates booking state and seat availability through the API.
+From `projects/qa-booking-payment-lab`, start the service with `npm start`, then open **http://127.0.0.1:3100**. It has a deliberately fictional airline offer, a passenger form, and controls to simulate payment confirmation, failure, cancellation and refunds. Each action updates booking state and seat availability through the API.
 
 This app is **not deployed online**. A GitHub source repository does not automatically host a dynamic Node.js API. A production deployment would require a separate hosting decision, configuration and security review.
 
@@ -87,7 +87,7 @@ npm run test:ui
 
 For environments where Chromium is installed separately, set `CHROMIUM_EXECUTABLE` to the executable path and run `npm run test:ui`. No actual airline/payment provider is called. Playwright test scripts run a fresh ephemeral server per test, so test data does not leak between scenarios.
 
-GitHub Actions is defined under [`.github/workflows/ci.yml`](.github/workflows/ci.yml) and is **not scheduled**; it runs on pushes, pull requests and manual invocation, using only the synthetic test system.
+GitHub Actions for this profile repository is defined at [the repository-root workflow](../../.github/workflows/qa-portfolio-ci.yml) and is **not scheduled**; it runs on pushes, pull requests and manual invocation, using only the synthetic test system.
 
 ## Manual QA documentation
 
@@ -120,8 +120,6 @@ This portfolio deliberately includes **human-reviewed instructions**, not a clai
 
 This original demo translates areas from my QA work into a **safe and shareable learning project**: scenario design, regression and negative testing, booking/payment state logic, mocked integrations, browser/API automation, CI and documentation. It does not make the client's proprietary code public.
 
-- [Resume-ready project description (English)](docs/cv-project-description.md)
-- [Interview Q&A / how to explain the project (Vietnamese)](docs/interview-guide-vi.md)
 - [Security and confidentiality scope](docs/safety.md)
 
 ## Limitations (intentional)

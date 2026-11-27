@@ -1,0 +1,12 @@
+{
+  "suite": "Native Node.js API and domain automated regression",
+  "environment": "Local synthetic mock server (127.0.0.1; isolated per test)",
+  "startedAt": "2026-11-26T19:11:44.149Z",
+  "finishedAt": "2026-11-26T19:11:44.464Z",
+  "tests": 55,
+  "passed": 55,
+  "failed": 0,
+  "skipped": 0,
+  "status": "PASS",
+  "note": "UI / Playwright tests are a separate suite; this summary does not count them."
+}

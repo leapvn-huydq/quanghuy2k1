@@ -1,0 +1,17 @@
+---
+description: Standard QA workflow for this fictional local booking/payment sandbox
+alwaysApply: true
+---
+
+# QC workflow rules
+
+- Work only on this synthetic portfolio. Never use third-party customer systems, secrets, production URLs or real PII.
+- Before writing code or tests, map requirement `BR-XX`, risk, happy path, negative path, boundary values and state transition.
+- Use `TC-<MODULE>-<NNN>` IDs and document preconditions, data, steps and measurable expected results.
+- Separate test levels: pure domain, HTTP API, Playwright UI and manual/exploratory charters.
+- Treat money and webhook integrity as high risk: validate signature, amount, event IDs, state, replay behavior and inventory.
+- Use isolated servers and fake data; never run destructive live actions.
+- If an assertion fails, document expected vs actual and evidence. Never edit the expected outcome solely to turn a failure green.
+- Every run summary includes executed tests, pass/fail/blocked/not-run, environment, evidence and residual risk.
+- Prefer deterministic automated smoke/regression via npm scripts; MCP is optional for local exploration, not a replacement for saved test evidence.
+- AI/agent output is a draft requiring human QA review and can never claim unexecuted tests passed.
