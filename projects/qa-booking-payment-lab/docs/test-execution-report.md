@@ -13,7 +13,7 @@
 | Skipped | **0** |
 | Execution status | **PASS** |
 | Playwright UI scripts authored | 8 |
-| Playwright UI execution | **NOT EXECUTED successfully** due to Chromium administrator URL blocking in the current environment |
+| Playwright UI execution | **8/8 PASS** on GitHub Actions Ubuntu 24.04, 2026-11-27 ([run evidence](https://github.com/leapvn-huydq/quanghuy2k1/actions/runs/45923262100)) |
 
 ### What was validated
 
@@ -21,15 +21,15 @@ Offer contract and availability, booking creation and negative data, pricing own
 
 ### Defect summary
 
-No failing API/domain checks were observed in the verified run. This does **not** mean the whole system has zero bugs; exploratory and UI coverage remain independent responsibilities.
+No failing API/domain or Playwright UI checks were observed in the verified CI run. This does **not** imply the fictional app has zero bugs or that manual exploratory testing is complete.
 
 ### Environment limitations
 
-The current sandbox uses a managed Chromium with a URLBlocklist policy. Browser navigation to the local test server returned `net::ERR_BLOCKED_BY_ADMINISTRATOR`. This is an environment policy, not a verified application defect. UI scripts are committed for execution on an unrestricted local machine / GitHub Actions.
+The original authoring sandbox blocked localhost browser navigation with `net::ERR_BLOCKED_BY_ADMINISTRATOR`. Initial GitHub-hosted browser installation then failed because the runner used Ubuntu 26.04, which Playwright 1.60.0 did not support. The workflow was pinned to Ubuntu 24.04; the following run confirmed all 8 UI scenarios pass.
 
 ### Recommendation
 
-Accept the API/domain regression baseline for portfolio demonstration only. Rerun Playwright UI scripts in CI and attach the actual browser results before using the phrase "full E2E suite passed." No real flight booking or payment has occurred.
+Both automated layers now have passing CI evidence for this fictional sandbox: 55/55 API/domain and 8/8 UI. Do not interpret these results as QA sign-off for any real airline, payment gateway, or client system. No real flight booking or payment has occurred.
 
 ### Repeatable evidence generation
 
