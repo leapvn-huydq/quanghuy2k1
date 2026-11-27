@@ -1,3 +1,5 @@
+# Standalone-template workflow: GitHub only recognizes .github/workflows/ at the repository root.
+# If this project is extracted to its own repo, this workflow becomes active.
 name: QA Portfolio - API and Browser Regression
 
 on:
@@ -16,7 +18,7 @@ concurrency:
 jobs:
   api-regression:
     name: API and business rules (Node.js)
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
@@ -38,7 +40,8 @@ jobs:
 
   browser-regression:
     name: Playwright UI smoke (synthetic local app)
-    runs-on: ubuntu-latest
+    # Stay on the Playwright 1.60.0-supported Ubuntu image.
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
