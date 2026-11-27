@@ -15,7 +15,7 @@
 - Authored **8 Playwright UI test scripts** to validate booking and payment journeys; separated browser checks from API regression for easier CI execution and reporting.
 - Documented test scenarios, detailed test cases, defect templates, release-readiness checklists and a GitHub Actions workflow; prepared reusable Cursor rules/skills and Claude Code guidance for human-reviewed QA work.
 
-**Important accuracy note:** The API/domain cases were executed successfully; the browser scripts were authored but could not be verified in the restricted working environment. Do not claim an independently verified end-to-end browser pass until a successful Playwright run is available.
+**Verification note (2026-11-27):** GitHub Actions on Ubuntu 24.04 verified **55/55 API/domain and 8/8 Playwright UI tests pass** ([CI run](https://github.com/leapvn-huydq/quanghuy2k1/actions/runs/45923262100)). The independent fictional demo has no real customer integrations; the CI outcome is not proof of coverage of any client system.
 
 ### Short version (for a two-page CV)
 

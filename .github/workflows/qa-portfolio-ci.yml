@@ -26,7 +26,7 @@ defaults:
 jobs:
   api-domain:
     name: Native API and domain test suite
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
@@ -48,7 +48,8 @@ jobs:
 
   playwright-ui:
     name: Browser smoke and lifecycle regression
-    runs-on: ubuntu-latest
+    # Pin Ubuntu 24.04: Playwright 1.60.0 cannot install Chromium on ubuntu-26.04.
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4

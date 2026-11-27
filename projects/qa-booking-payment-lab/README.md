@@ -19,7 +19,7 @@ A local-only travel booking sandbox, built from scratch for **end-to-end quality
 | Scope | Fictional flight booking, payment callback, refund/cancel and partner API failure testing |
 | Manual QA | Business rules, test plan, scenario matrix, test case catalog, risk analysis, defect and release documents |
 | API and domain regression | **55/55 PASS**, executed with Node.js built-in test runner (local verification) |
-| UI automation | **8 Playwright test scripts**, separate browser suite; run on a machine/CI with an allowed browser |
+| UI automation | **8/8 Playwright tests PASS** in GitHub Actions (Ubuntu 24.04); browser suite runs against the local mock only |
 | Technologies | JavaScript, Node.js 20+, Playwright, REST/JSON, HMAC SHA-256, GitHub Actions |
 | AI workflow | Cursor project rules, two reusable Cursor skills, Claude Code instructions, MCP example (no secrets) |
 | Infrastructure | Localhost HTTP API and in-memory storage; no external APIs, credentials or paid services |
@@ -128,7 +128,7 @@ This original demo translates areas from my QA work into a **safe and shareable 
 - No persistent database or production-ready authentication; every test runs against an in-memory sandbox.
 - Refund is a **synthetic status transition**, not a gateway refund or bank transfer.
 - This is a teaching/portfolio system, not a commerce platform.
-- Only the 55 Node.js API/domain checks have been independently verified in the current working environment. UI browser checks require an environment without Chromium URL-blocking policy and should be run before claiming they passed.
+- Verified in [GitHub Actions CI](https://github.com/leapvn-huydq/quanghuy2k1/actions/runs/45923262100): **55/55 API/domain checks and 8/8 Playwright UI checks passed** on Ubuntu 24.04. This does not establish production readiness or coverage of external providers.
 
 ## Author and contact
 
