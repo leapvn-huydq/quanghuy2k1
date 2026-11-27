@@ -27,11 +27,11 @@ A local-only test environment with booking, cancellation, mock payment callbacks
 | Area | Scope |
 | --- | --- |
 | Business rules | Offer, booking, inventory, payment, cancel and refund state transitions |
-| Automation | **55 verified API/domain tests** + **8 Playwright UI test scripts** |
+| Automation | **55/55 API/domain tests + 8/8 Playwright UI tests passed on GitHub Actions** |
 | Manual QA evidence | Test plan, scenarios, test cases, defect template, RTM, execution and release report |
 | Process improvements | Cursor rules/skills, Claude Code instructions and optional MCP sample |
 
-> The 55 API/domain cases have been run successfully. UI scripts are included but were not independently verified in the original restricted browser environment. No real airline, gateway or customer data is used.
+> CI verified **55/55 API/domain tests and 8/8 Playwright UI tests** on Ubuntu 24.04 ([successful run](https://github.com/leapvn-huydq/quanghuy2k1/actions/runs/45923262100)). Earlier UI tests were blocked by the original execution environment; no airline, gateway, or customer systems are accessed.
 
 [Explore source, setup and documentation](projects/qa-booking-payment-lab/README.md)
 
