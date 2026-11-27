@@ -1,91 +1,69 @@
-# qc-ai-agent — AI-driven QC workspace (Cursor)
+# Hi, I'm Duong Quang Huy
 
-This folder is the **single workspace** a QC engineer opens in Cursor to:
+**QA/QC Engineer | Manual Testing | API & UI Automation | AI-enabled QA Workflows**
 
-1. **Author** markdown test specs under each product's `specs/`, and
-2. **Execute** UI tests by prompting the AI ("test the login screen on UAT"), which clarifies
-   the request, scaffolds the spec if needed, drives the browser via **Playwright MCP**, and
-   appends a run summary to the spec.
+Based in Ho Chi Minh City, Vietnam. I focus on translating complex business requirements into measurable test scenarios, identifying high-risk edge cases and improving release confidence with practical automation.
 
-There is **no** application code, `package.json`, or tracked automation source in this
-directory — execution happens at runtime through MCP servers configured locally.
+**Email:** [duonghuy0304@gmail.com](mailto:duonghuy0304@gmail.com)  
+**Resume:** [Professional background](resume.md)  
+**Featured project:** [Booking & Payment QA Automation Lab](projects/qa-booking-payment-lab/README.md)
 
-## Quick start for the QC engineer
+## What I do
 
-1. **Cursor setup:** [docs/CURSOR-IDE-SETUP-FOR-QC.md](docs/CURSOR-IDE-SETUP-FOR-QC.md) —
-   rules, skills, extensions, MCP (safe `mcp.json` shape). Playwright MCP is required.
-2. **Env file:** [environments/LOCAL.md](environments/LOCAL.md) holds the real URLs and
-   credentials per env/account. It is tracked in this repo so the tester gets working logins
-   on first clone — the AI reads it at runtime and logs in automatically. Add new rows
-   (Prep, Prod, additional accounts) directly to that file.
-3. **Day-one prompts:** [docs/PROMPT-COOKBOOK.md](docs/PROMPT-COOKBOOK.md) — copy-pasteable
-   starter prompts for smoke tests, regressions, bug repro, and exploration.
+- **Manual QA/QC:** Requirement analysis, business-flow mapping, test plan/scenario/case design, exploratory, smoke, sanity, regression, integration, system and UAT testing.
+- **API and data quality:** Postman, Swagger, REST contracts, SQL Server, PostgreSQL, payment gateway IPN/webhooks, partner integration failures and mock services.
+- **QA Automation:** JavaScript/Node.js, Playwright UI checks, API regression, structured suites and GitHub Actions CI reporting.
+- **AI-enhanced QC workflow:** Cursor, Claude Code, MCP concepts, reusable QC rules/skills, test documentation and human-reviewed automated test authoring.
+- **Team coordination:** Experience leading a two-member QC team, reviewing test cases, coordinating execution and reporting release risks.
 
-## Repository layout
+## Featured personal project
 
-```text
-qc-ai-agent/
-├── README.md                           # This file
-├── docs/
-│   └── CURSOR-IDE-SETUP-FOR-QC.md      # Rules, skills, plugins, MCP for QC
-├── environments/
-│   ├── README.md                       # How to use placeholders
-│   └── TEST-ENVIRONMENTS.md            # UAT / Prep / Prod URL & account placeholders
-├── .cursor/
-│   ├── rules/                          # qc-spec-authoring, qc-ide-and-mcp, qc-ai-execution
-│   ├── skills/
-│   │   ├── qc-engineer/SKILL.md       # spec authoring workflow
-│   │   └── qc-test-runner/SKILL.md    # AI-driven test execution workflow
-│   └── mcp.json.example               # MCP server shapes — NO secrets
-├── _templates/
-│   └── testcase.md
-├── booking1a/
-│   ├── README.md
-│   └── specs/
-│       ├── common/
-│       └── clients/<client-id>/
-└── visa-top-ten/
-    ├── README.md
-    └── specs/
-        └── common/
-```
+### [Booking & Payment QA Automation Lab](projects/qa-booking-payment-lab/README.md)
 
-## Test environments
+**Original fictional booking/payment application + QA portfolio**
 
-Tracked placeholders (no real secrets): [environments/TEST-ENVIRONMENTS.md](environments/TEST-ENVIRONMENTS.md).
+A local-only test environment with booking, cancellation, mock payment callbacks, HMAC signatures, duplicate webhook protection, refund simulation and partner failure cases. It includes a responsive demo UI, manual QA documentation, test-case traceability, automation scripts, reporting templates and a GitHub Actions workflow.
 
-For real URLs and credentials, use a **local** gitignored file (see [environments/README.md](environments/README.md)) or your team vault.
+| Area | Scope |
+| --- | --- |
+| Business rules | Offer, booking, inventory, payment, cancel and refund state transitions |
+| Automation | **55 verified API/domain tests** + **8 Playwright UI test scripts** |
+| Manual QA evidence | Test plan, scenarios, test cases, defect template, RTM, execution and release report |
+| Process improvements | Cursor rules/skills, Claude Code instructions and optional MCP sample |
 
-## Test case IDs and filenames
+> The 55 API/domain cases have been run successfully. UI scripts are included but were not independently verified in the original restricted browser environment. No real airline, gateway or customer data is used.
 
-- **Pattern:** `TC-<PRODUCT>-<AREA>-<NNN>.md` (example: `TC-B1A-AUTH-001.md`).
-- **PRODUCT** short codes: e.g. `B1A` for booking1a, `VTT` for visa-top-ten (align with your team glossary).
-- Copy new cases from [`_templates/testcase.md`](_templates/testcase.md).
+[Explore source, setup and documentation](projects/qa-booking-payment-lab/README.md)
 
-## Product indexes
+## Professional experience
 
-- [booking1a/README.md](booking1a/README.md)
-- [visa-top-ten/README.md](visa-top-ten/README.md)
+**Quality Control - LEAP LLC** | Jan 2025 - Present
 
-## How AI execution works (fully automatic)
+- Test B2B/B2C/B2E travel and service platforms including booking, eSIM, hotel and payment-related workflows.
+- Prepare test scenarios, test cases, execution evidence, regression reports and release-readiness findings.
+- Investigate API integrations, system logs, payment callbacks and data consistency.
+- Apply Cursor, Claude Code, Playwright/MCP and reusable test rules to improve QC efficiency.
+- Lead a two-member QC team and collaborate with Dev, PM and BA stakeholders.
 
-When you prompt **"test the login screen on UAT"**, the AI runs end-to-end with no
-confirmation gates:
+**Software Tester - Daikin Air Conditioning (Vietnam) JSC** | Sep 2023 - Jan 2025
 
-1. **Resolves silently** — product, env (UAT default; UAT/Prep/Prod all auto-execute),
-   account (default row in `environments/LOCAL.md`), browser (Chromium). Real URLs and
-   credentials are read straight from `environments/LOCAL.md`.
-2. **Locates or scaffolds** the test case under `specs/common/` or `specs/clients/<id>/`
-   using `_templates/testcase.md` and `TC-<PRODUCT>-<AREA>-<NNN>.md` — saved without a
-   "is this plan ok?" pause.
-3. **Executes** via Playwright MCP, including destructive steps if the prompt asks for them.
-   Screenshots/traces land in `results/<date>/<TC-id>/` (gitignored).
-4. **Records** a `### Run YYYY-MM-DD …` block at the top of the spec's `## Notes`. Failures
-   are logged with actual vs expected — the spec is never rewritten to match a regression.
+- Tested B2B portals and mobile workflows, designed/executed 200+ test cases and validated third-party APIs and payments.
+- Built practical Python utilities for QR code generation and data exports.
 
-The AI only stops to ask if [environments/LOCAL.md](environments/LOCAL.md) is missing a
-URL or credential row for the requested run — fabricated values would just produce false
-passes.
+**Software Consultant - Tinh Hoa Solutions** | Sep 2022 - Sep 2023
 
-Full rules: [.cursor/rules/qc-ai-execution.mdc](.cursor/rules/qc-ai-execution.mdc).
-Worked examples: [.cursor/skills/qc-test-runner/SKILL.md](.cursor/skills/qc-test-runner/SKILL.md).
+- HRM requirement analysis, validation, UAT support, deployment assistance, SQL/SSRS reporting and client documentation.
+
+## Skills
+
+`Manual QA` `Test Case Design` `Smoke & Regression` `Business Flow Analysis` `API Testing` `Postman` `SQL` `Playwright` `Node.js` `Python` `GitHub Actions` `Cursor` `Claude Code` `MCP` `Test Reporting` `Team Coordination`
+
+## Education
+
+**Bachelor of Management Information Systems** - University of Finance and Marketing (GPA 3.18/4.0).
+
+## Let's connect
+
+[Email me](mailto:duonghuy0304@gmail.com) | [Resume](resume.md) | [Personal QA Project](projects/qa-booking-payment-lab/README.md)
+
+*Customer code, credentials and internal systems are not shared publicly. The featured project is independently developed with synthetic data.*

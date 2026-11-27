@@ -1,0 +1,65 @@
+name: Personal QA Portfolio - Booking and Payment Lab
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'projects/qa-booking-payment-lab/**'
+      - '.github/workflows/qa-portfolio-ci.yml'
+  pull_request:
+    paths:
+      - 'projects/qa-booking-payment-lab/**'
+      - '.github/workflows/qa-portfolio-ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    working-directory: projects/qa-booking-payment-lab
+
+jobs:
+  api-domain:
+    name: Native API and domain test suite
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Syntax validation
+        run: npm run lint
+      - name: Verify API and domain regression
+        run: npm run test:report
+      - name: Upload verified report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa-portfolio-api-evidence
+          path: projects/qa-booking-payment-lab/reports/last-run.*
+          if-no-files-found: warn
+          retention-days: 14
+
+  playwright-ui:
+    name: Browser smoke and lifecycle regression
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install Playwright
+        run: npm install --no-audit --no-fund
+      - name: Install browser
+        run: npx playwright install --with-deps chromium
+      - name: Run synthetic UI tests
+        run: npm run test:ui
+        env:
+          CI: 'true'

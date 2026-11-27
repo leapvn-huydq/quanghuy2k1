@@ -1,0 +1,19 @@
+{
+  "name": "huydq-qa-automation-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Original QA Automation portfolio: synthetic booking, payment/webhook, API and UI regression testing",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.js",
+    "test": "npm run test:api && npm run test:ui",
+    "test:api": "node --test tests/api/*.test.js tests/domain/*.test.js",
+    "test:smoke": "node --test --test-name-pattern='TC-API-001|TC-OFF-001|TC-BOOK-001|TC-PAY-001|TC-PARTNER-001' tests/api/*.test.js",
+    "test:regression": "npm run test:api && npm run test:ui",
+    "test:ui": "node --test tests/ui/*.test.js",
+    "test:report": "node scripts/generate-report.js",
+    "lint": "node scripts/check-source.js"
+  },
+  "devDependencies": { "playwright": "1.60.0" },
+  "keywords": ["qa", "qc", "automation", "playwright", "manual-testing", "api-testing", "payment-testing", "webhook", "github-actions", "cursor", "claude-code"]
+}

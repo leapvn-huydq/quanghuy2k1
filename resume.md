@@ -1,89 +1,59 @@
 # DUONG QUANG HUY
 
-**QA/QC ENGINEER**
+**QA/QC Engineer | Manual Testing, QA Automation & QC Team Coordination**
 
-Ho Chi Minh City, Vietnam • (+84) 0898 214 791 • <duonghuy0304@gmail.com> • [github.com/leapvn-huydq/quanghuy2k1](https://github.com/leapvn-huydq/quanghuy2k1)
+Ho Chi Minh City, Vietnam | [duonghuy0304@gmail.com](mailto:duonghuy0304@gmail.com)
 
----
+## Professional summary
 
-## SUMMARY
+QA/QC Engineer working across Web, Mobile and REST API products in Agile/Scrum environments. Experience with full STLC, manual test strategy, scenario and test-case design, smoke/regression/integration/system testing, payment/IPN workflows, third-party integrations and release evidence. Build reusable Playwright/Node.js automation and use Cursor, Claude Code and MCP-oriented workflows to improve test authoring and execution. Experience leading two QC members and coordinating quality with Dev/PM/BA.
 
-QA/QC Engineer with practical experience testing web, mobile, and API-based applications. Proficient in designing and executing test cases, identifying issues, and ensuring release quality through close collaboration with cross-functional teams. Strong background in Management Information Systems, with solid technical skills in Python, SQL, and API testing. Highly focused on regression and integration testing to deliver reliable and high-performing products.
+## Core competencies
 
----
+| Category | Tools and practice |
+| --- | --- |
+| Manual QA | Business analysis, equivalence partitions, boundaries, decision tables, state transitions, smoke, sanity, regression, UAT |
+| Documentation | Test plans, scenarios, detailed cases, checklists, reports, defects, evidence, readiness checks |
+| Integration and data | Postman, Swagger, SQL Server, PostgreSQL, mock APIs, log analysis, payments, webhook/IPN callbacks |
+| Automation | Playwright, JavaScript/Node.js, Python, reusable suites, GitHub Actions |
+| AI workflow | Cursor, Claude Code, rules and skills, MCP test exploration, human review |
+| Collaboration | Two-member QC team coordination, ClickUp, Agile/Scrum, Dev/PM/BA alignment |
 
-## TECHNICAL SKILLS
+## Professional experience
 
-- **Programming Languages**: C++, C#, Python
-- **Databases**: SQL Server, PostgreSQL
-- **API Tools**: Postman, Swagger, Hasura
-- **Testing**: Manual Testing (Web, Mobile, API)
-- **AI-assisted Test Design**: Using AI tools to generate test cases and automation scripts
-- **Skills**: Creation, Test Execution, and Documentation
-- **Design Tools**: UI/UX Mockup & Mindmap Tools (Figma, Xmind)
-- **Analysis**: Requirement Analysis, Design Review, Checklists/Test Cases
-- **Bug Tracking & Project Management**: ClickUp
-- **Agile/Scrum**: Sprint Planning, Daily Standup, Retrospective
-- **Other Skills**: Analytical Thinking, Problem Solving, Communication, Adaptability, Business Understanding, Mentoring
+### Quality Control - LEAP LLC | January 2025 - Present
 
----
+- Analyze requirements and B2B/B2C/B2E workflows for travel and service products; define risks and edge cases.
+- Design test scenarios/cases, smoke and regression runs, test documentation, defect reports and release evidence.
+- Verify booking, partner API, payment gateway and IPN/webhook data/status consistency using API tests, logs and SQL.
+- Build and maintain scripted Playwright/Node.js and AI-assisted QC workflows with Cursor, Claude Code, reusable rules/skills and CI checks.
+- Lead two QC members and help coordinate test planning, execution, defect triage and release readiness.
 
-## WORK EXPERIENCE
+### Software Tester - Daikin Air Conditioning (Vietnam) JSC | September 2023 - January 2025
 
-### Quality Control | LEAP LLC
+- Tested B2B service/warehouse/SCRM portals and customer/warehouse/technician mobile apps.
+- Designed and executed 200+ test cases, validated partner/payment APIs and supported production rollout.
+- Built Python support utilities for QR-code creation and database exports.
 
-**[01/2025 - Present]**
+### Software Consultant - Tinh Hoa Solutions | September 2022 - September 2023
 
-- Test B2B, B2C, and B2E platforms for flight, eSIM, hotel booking, and collection services.
-- Perform API testing using Postman and Swagger, analyze system logs via terminal to verify real-time data flow, and ensure stable integrations with partners such as Amadeus, Gohub, Bizitrip, and Sunrise Waterbus.
-- Build mock servers to simulate partner APIs and test unavailable or unstable endpoints.
-- Conducted regression, integration, and system testing for B2B/B2C platforms, helping reduce post-release bugs by 40% through improved test coverage and detailed validation workflows.
-- Leveraged AI tools to generate test cases and automation scripts, speeding up test design and increasing coverage for regression and integration scenarios.
-- Verify payment gateway integrations (ACB, Payoo, NganLuong), including IPN validation and transaction accuracy.
-- Log, track, and manage bugs/tasks using ClickUp, ensuring clear status updates for cross-functional teams.
-- Participate in Agile/Scrum ceremonies (Sprint Planning, Daily Standup, Retrospective) to align on priorities and testing progress.
-- Develop strong understanding of business flows (booking, payment, partner integration) to review requirements and identify edge cases early.
-- Mentored a fresher QC engineer, guiding test case design, tool usage, and defect reporting practices.
-- Collaborate with developers and business teams to ensure product quality and provide QA sign-off for production releases.
+- Gathered requirements and configured HRM workflows; supported testing, UAT and training.
+- Helped with deployment, environment configuration and SQL/SSRS reporting.
 
-### Software Tester | Daikin Air Conditioning (Vietnam) JSC
+## Selected professional project (confidential)
 
-**[09/2023 – 01/2025]**
+**Travel Booking & Payment QA Automation Framework** - QA/QC Engineer  
+Worked with Playwright/Node.js test suites, regression and release-validation scenarios, structured test specs, GitHub Actions reporting and Cursor/Claude Code/MCP-assisted QA workflows. Client source and test data are not public.
 
-- Tested multiple B2B platforms, including Service Sale Portal, Warehouse Portal, and SCRM Portal, along with Customer, Warehouse, and Technician (KTV) mobile apps.
-- Designed and executed 200+ test cases for campaign workflows, warehouse logic, and customer transactions.
-- Conducted API testing using Postman and Swagger, ensuring integration stability with external partners such as Dien May Xanh, Nguyen Kim, and PepsiCo.
-- Verified payment gateway integrations with MoMo and VNPay, validating API responses, IPN flows, and transaction accuracy.
-- Developed small Python tools to support users — such as generating bulk QR codes and automating data exports across multiple databases.
-- Provided user support and created concise user guides to ensure smooth rollout of new system features.
+## Featured personal project
 
-### Software Consultant | Tinh Hoa Solutions
+[**Booking & Payment QA Automation Lab**](projects/qa-booking-payment-lab/README.md)  
+Built an independent synthetic booking/payment sandbox and QA suite: **55 verified API/domain tests**, **8 authored Playwright browser scenarios**, manual QA plan/scenarios/cases/RTM, reproducible reports, CI and Cursor/Claude guidelines.
 
-**[09/2022 - 09/2023]**
+## Education
 
-- Implemented HRM software systems: gathered and analyzed client requirements, configured system modules, and validated setups before deployment.
-- Designed and executed comprehensive test cases to ensure data integrity and functional accuracy prior to UAT.
-- Supported User Acceptance Testing (UAT) and provided end-user training with clear, detailed documentation.
-- Configured environments and deployed source code on client servers, including domain setup, SSL configuration, and minor system adjustments.
-- Developed and maintained SSRS reports and custom SQL queries to meet business reporting requirements.
-- Collaborated with project managers and developers to ensure system stability and alignment with client expectations.
+Bachelor of Management Information Systems - University of Finance and Marketing, GPA 3.18/4.0.
 
----
+## Certifications and learning
 
-## EDUCATION
-
-**Bachelor of Management Information Systems** | University of Finance and Marketing
-GPA: 3.18 / 4.0
-
----
-
-## ACHIEVEMENTS
-
-- **Certification**: SS4U Express Enterprise Resource Planning Training Program
-- **DataCamp Courses**: Python for Data Science, PostgreSQL for Data Analysis
-
----
-
-## LANGUAGE
-
-- **English**
+SS4U Express ERP training; DataCamp courses in Python for Data Science and PostgreSQL for Data Analysis.
